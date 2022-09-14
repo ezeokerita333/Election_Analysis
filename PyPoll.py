@@ -56,6 +56,19 @@ with open(file_to_load) as election_data:
 
         #Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
+    # Save the results to the text file
+    with open(file_to_save, "w") as txt_file:
+
+        #Print the final vote count to the terminal
+        election_results = (
+            f"\nElection Results\n"
+            f"---------------------\n"
+            f"Total Votes: {total_votes:,}\n"
+            f"----------------------\n")
+        print(election_results, end="")
+    
+        #Save the final vote count to the text file
+        txt_file.write(election_results)
 #Iterate throught the canidate list
 for candidate_name in candidate_votes:
     #Retrieve vote count of a candidate
@@ -63,7 +76,7 @@ for candidate_name in candidate_votes:
     #Calculate the percentage of votes
     vote_percentage = float(votes) / float(total_votes) * 100
     #Print the candidate name and percentage of votes.
-    print(f"{candidate_name}: received {vote_percentage:.1f}% ({votes:,}).")
+    #print(f"{candidate_name}: received {vote_percentage:.1f}% ({votes:,}).")
 
     #Determine if the votes are grater than the winning count.
     if (votes > winning_count) and (vote_percentage > winning_percentage):
@@ -73,14 +86,13 @@ for candidate_name in candidate_votes:
         #Set the winning_candidate equal to the candidate's name
         winning_candidate = candidate_name
 
-#Print out the winning candidate, vote count and percentage
-#print(f"{winning_candidate} is the winning candidate with {winning_percentage:.1f}%")
-winning_candidate_summary = (
-    f"-------------------------\n"
-    f"Winner: {winning_candidate}\n"
-    f"Winning Vote Count: {winning_count:,}\n"
-    f"Winning Percentage: {winning_percentage:.1f}\n")
+#Print the winning candidates' results to the terminal
+#winning_candidate_summary = (
+    #f"-------------------------\n"
+    #f"Winner: {winning_candidate}\n"
+    #f"Winning Vote Count: {winning_count:,}\n"
+    #f"Winning Percentage: {winning_percentage:.1f}\n")
 
-print (winning_candidate_summary)
+#print (winning_candidate_summary)
 #Print the candidate list.
 #print(candidate_votes)
