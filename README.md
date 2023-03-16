@@ -1,12 +1,12 @@
 # Election_Analysis
 
 ## Project Overview
-A Colorado Board of elections employee has given you the following tasks to complete the election audit of a recent loacl congressional election with the help of python.
+A Colorado Board of elections employee has given you the following tasks to complete the election audit of a recent local congressional election with the help of python.
 
-1. Calaculate the total number of votes cast. 
+1. Calculate the total number of votes cast. 
 2. Get a complete list of candidates who received votes.
-3. Calaculate the total number of votes each candidate received.
-4. Calaculate the percentage of votes each candidate won.
+3. Calculate the total number of votes each candidate received.
+4. Calculate the percentage of votes each candidate won.
 5. Determine the winner of the elcetion based on popular vote.
 
 ## Resources
