@@ -28,4 +28,4 @@ The analysis of the election show that:
     -Candidate (Diana DeGette), who received "73.8%" of the vote and "272,892" number of votes.
     
 Below is a simple explanation of the summary using excel:
-Screenshot 2023-03-16 at 10.36.44 PM.png<img width="884" alt="image" src="https://user-images.githubusercontent.com/109382758/225798884-ea1c737e-1dd7-4d35-9f68-3d06ad3f608c.png">
+<img width="884" alt="image" src="https://user-images.githubusercontent.com/109382758/225798884-ea1c737e-1dd7-4d35-9f68-3d06ad3f608c.png">
